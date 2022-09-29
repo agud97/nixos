@@ -389,23 +389,6 @@
         "type": "github"
       }
     },
-    "sourcecode": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1664042355,
-        "narHash": "sha256-+WgeQh0t56LxRjQemKaS9MgQoD0V4ahLPXor7qd3y+g=",
-        "owner": "agud97",
-        "repo": "sl-php",
-        "rev": "bd041b2a2024786c1e4002af8ead591d27670b20",
-        "type": "github"
-      },
-      "original": {
-        "owner": "agud97",
-        "repo": "sl-php",
-        "type": "github"
-      }
-    }
-  },
   "root": "root",
   "version": 7
 }
