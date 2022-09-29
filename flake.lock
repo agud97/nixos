@@ -392,11 +392,11 @@
     "sourcecode": {
       "flake": false,
       "locked": {
-        "lastModified": 1664474719,
-        "narHash": "sha256-gka4Kloe67Ig/qBt3GU2WNMSys7q45W7lC2xSceoY94=",
+        "lastModified": 1664477375,
+        "narHash": "sha256-UyR0ImPoljUSwLmtYLsPXd5fES7dx03RQv1yjsot5DQ=",
         "owner": "agud97",
         "repo": "sl-php",
-        "rev": "ae439c26805a0e3b2bc94bd2909dd542c1db3051",
+        "rev": "1831a740a5a257c5ab741f405ac1eb9a224e417a",
         "type": "github"
       },
       "original": {
