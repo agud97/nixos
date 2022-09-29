@@ -329,8 +329,7 @@
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
         "slgraph": "slgraph",
-        "slweb": "slweb",
-        "sourcecode": "sourcecode"
+        "slweb": "slweb"
       }
     },
     "rust-analyzer-src": {
