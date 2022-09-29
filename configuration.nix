@@ -33,10 +33,10 @@ in {
   ];
 };
   
-  imports = [ "${modulesPath}/virtualisation/amazon-image.nix"
+  imports = [ /etc/nixos/hardware-configuration.nix 
 		./sl-graph.nix
    ];
-  ec2.hvm = true;
+ # ec2.hvm = true;
 
 #environment.systemPackages = with pkgs; [ 
 #  vim 
