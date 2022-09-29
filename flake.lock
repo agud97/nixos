@@ -388,8 +388,6 @@
         "repo": "flake-nodejs",
         "type": "github"
       }
-    },
-  }  
   "root": "root",
   "version": 7
 }
