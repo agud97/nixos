@@ -22,7 +22,7 @@
       };
     in {
 
-        nixosConfigurations.myhost = nixpkgs.lib.nixosSystem {
+        nixosConfigurations = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux"; 
           specialArgs = {
             inherit inputs;
