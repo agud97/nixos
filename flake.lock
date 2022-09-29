@@ -389,14 +389,6 @@
         "type": "github"
       }
     },
-    "sourcecode": {
-      "flake": false,
-      "original": {
-        "owner": "agud97",
-        "repo": "sl-php",
-        "type": "github"
-      }
-    }
   },
   "root": "root",
   "version": 7
