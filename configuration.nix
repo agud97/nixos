@@ -33,7 +33,7 @@ in {
   ];
 };
   
-  imports = [ /etc/nixos/hardware-configuration.nix 
+  imports = [ #/etc/nixos/hardware-configuration.nix 
 		./sl-graph.nix
    ];
  # ec2.hvm = true;
