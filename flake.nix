@@ -22,13 +22,13 @@
       };
     in {
 
-        nixosConfigurations.myhost = nixpkgs.lib.nixosSystem {
+        nixosConfigurations.myaws = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux"; 
           specialArgs = {
             inherit inputs;
           };
           modules = [ #self.nixosModule
-                      ./configuration.nix
+                      ./aws/configuration.nix
                       #({ pkgs, ... }: {
        		#within.services.sl-graph.enable = true;	
 	          #    })	
