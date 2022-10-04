@@ -35,7 +35,7 @@ in {
   
   imports = [ #./amazon-image.nix
   "${modulesPath}/virtualisation/amazon-image.nix"
-		./sl-graph.nix
+		../sl-graph.nix
    ];
   ec2.hvm = true;
 
