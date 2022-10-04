@@ -29,7 +29,7 @@
           };
           modules = [ #self.nixosModule
                       ./configuration.nix
-                     ${modulesPath}/virtualisation/amazon-image.nix 
+                     nixpkgs/nixos/modules/virtualisation/amazon-image.nix 
                       #({ pkgs, ... }: {
        		#within.services.sl-graph.enable = true;	
 	          #    })	
