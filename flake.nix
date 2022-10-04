@@ -28,7 +28,8 @@
             inherit inputs;
           };
           modules = [ #self.nixosModule
-                      ./aws/configuration.nix
+                      ./configuration.nix
+                     "${modulesPath}/virtualisation/amazon-image.nix" 
                       #({ pkgs, ... }: {
        		#within.services.sl-graph.enable = true;	
 	          #    })	
