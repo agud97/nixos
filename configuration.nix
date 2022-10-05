@@ -17,14 +17,14 @@ in {
   ];
 };
   
-  imports = [ "${modulesPath}/virtualisation/amazon-image.nix" 
+  imports = [ #"${modulesPath}/virtualisation/amazon-image.nix" 
                # /etc/nixos/hardware-configuration.nix 
 		./sl-graph.nix
                 ./php-fpm.nix
                 ./nginx.nix
                 ./postgres.nix
    ];
-  ec2.hvm = true;
+  #ec2.hvm = true;
 
 #environment.systemPackages = with pkgs; [ 
 #  vim 

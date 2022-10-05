@@ -29,7 +29,7 @@
           };
           modules = [ #self.nixosModule
                       ./configuration.nix
-                     #./aws/amazon-image.nix 
+                     ./aws/aws.nix 
                       #({ pkgs, ... }: {
        		#within.services.sl-graph.enable = true;	
 	          #    })	
