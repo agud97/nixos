@@ -5,6 +5,22 @@ let
   app = "phpdemo";
   domain = "${app}.example.com";
 in {
+  services.phpfpm.pools.${app} = {
+    user = app;
+    settings = {
+      "listen.owner" = config.services.nginx.user;
+      "pm" = "dynamic";
+      "pm.max_children" = 32;
+      "pm.max_requests" = 500;
+      "pm.start_servers" = 2;
+      "pm.min_spare_servers" = 2;
+      "pm.max_spare_servers" = 5;
+      "php_admin_value[error_log]" = "stderr";
+      "php_admin_flag[log_errors]" = true;
+      "catch_workers_output" = true;
+    };
+    phpEnv."PATH" = lib.makeBinPath [ pkgs.php ];
+  };
   
   networking.hostName = "myhost";  
   
@@ -17,10 +33,9 @@ in {
   ];
 };
   
-  imports = [ "${modulesPath}/virtualisation/amazon-image.nix" 
+  imports = [ #./amazon-image.nix
                # /etc/nixos/hardware-configuration.nix 
 		./sl-graph.nix
-                ./php-fpm.nix
    ];
   ec2.hvm = true;
 
