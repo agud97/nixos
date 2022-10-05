@@ -6,16 +6,6 @@ let
   domain = "${app}.example.com";
 in {
   
-  networking.hostName = "myhost";  
-  
-  networking.firewall = {
-  enable = true;
-  allowedTCPPorts = [ 22 80 443 ];
-  allowedUDPPortRanges = [
-    { from = 4000; to = 4007; }
-    { from = 8000; to = 8010; }
-  ];
-};
   
   imports = [ #"${modulesPath}/virtualisation/amazon-image.nix" 
                # /etc/nixos/hardware-configuration.nix 
