@@ -18,7 +18,7 @@ in {
 };
   
   imports = [ 
-            ./virt/hardware-configuration.nix 
+            ./hardware-configuration.nix 
    ];
 services.openssh.enable = true;
 services.openssh.permitRootLogin = "yes";
