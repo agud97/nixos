@@ -49,8 +49,8 @@ nix = {
   '';
 };
 
-services.openssh.enable = true;
-services.openssh.permitRootLogin = "yes";
+#services.openssh.enable = true;
+#services.openssh.permitRootLogin = "yes";
 services.sl-graph.enable = true;
 #inputs.slgraph.within.services.sl-graph = {
 #    enable = true;
