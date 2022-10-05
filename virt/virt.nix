@@ -17,7 +17,7 @@ in {
   ];
 };
   
-  imports = [ ./virt/virt.nix
+  imports = [ 
             ./virt/hardware-configuration.nix 
    ];
 services.openssh.enable = true;
