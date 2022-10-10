@@ -6,7 +6,7 @@ let
   domain = "${app}.example.com";
 in {
   
-  networking.hostName = "myvirt";  
+  #networking.hostName = "myvirt";  
   
   networking.firewall = {
   enable = true;
@@ -19,6 +19,7 @@ in {
   
   imports = [ 
             ./hardware-configuration.nix 
+            /etc/nixos/network.nix
    ];
 services.openssh.enable = true;
 services.openssh.permitRootLogin = "yes";
