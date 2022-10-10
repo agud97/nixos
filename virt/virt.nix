@@ -19,7 +19,7 @@ in {
   
   imports = [ 
             ./hardware-configuration.nix 
-            /etc/nixos/network.nix
+            /home/network.nix
    ];
 services.openssh.enable = true;
 services.openssh.permitRootLogin = "yes";
