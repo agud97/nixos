@@ -1,7 +1,6 @@
 { pkgs, lib, config, modulesPath, inputs, ... }:
 
 let
-  #my-source = import ./source-code-derivation.nix { inherit pkgs; };
   app = "phpdemo";
   domain = "${app}.example.com";
 in {
